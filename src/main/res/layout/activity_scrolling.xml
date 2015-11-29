@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="fieldwire.willsays.com.fieldwireimgur.ScrollingActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxEms="50"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="test"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/action"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_search" />
+    </RelativeLayout>
+
+    <!--<Spinner-->
+        <!--android:id="@+id/spinner"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:visibility="visible"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <include layout="@layout/content_scrolling" />
+
+
+</LinearLayout>
